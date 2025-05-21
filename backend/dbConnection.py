@@ -1,10 +1,11 @@
 import mysql.connector
 
+from backend.config import DBConfig
 
 def getdbConnection():
-    return mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="test1234admin",
-        database="creditcard"
-    )
+    try:
+        conn = mysql.connector.connect(**DBConfig)
+        return conn
+    except mysql.connector.Error as err:
+        print(f"Error: {err}")
+        return None
