@@ -3,11 +3,23 @@
 
     Current Libraries and planned Tech stack
 
-- The softwares backend shall be written entirely in Python.
-- The software shall use a mySQL database
-- The software shall use flask to handle web backend requests
+- The software backend shall be written entirely in Python utilizing flask api.
+- The software shall use a mySQL database 
+- The software shall use flask to handle web backend requests on AWS
 - The software shall use React Native for the frontend to ensure we will not have to create two apps. More specifically it will be using expo.
 
+
+    Diagram 1.0
+
+  iOS App (React Native)
+       ↓     ↑
+  [ sends request ]
+       ↓     ↑
+     Flask Backend (on AWS)
+       ↓     ↑
+  [ queries MySQL ]
+       ↓     ↑
+   Cloud Database (AWS RDS)
 
     Development Plan
     
@@ -19,9 +31,9 @@ As we logistically get closer this section will be ironed out.
 The schema for the database will consist of three tables: 
 1. User tables - Will consist of user and login information/email
 2. Card ID - Will consist of the cardID and card type
-3. User owned cards- Will consist of user id corresponding to card ID.
+3. User owned cards - Will consist of user id corresponding to card ID.
 4. Reward information - Will consist of card ID with various MCC category rewards
-5. MCC Categories - Will create a ID for MCCs that correspond with a category.
+5. MCC Categories - Will create an ID for MCCs that correspond with a category.
 
 
     Development Phases:
