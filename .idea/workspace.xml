@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="Updated comments and added a diagram. Also updated db connections">
-      <change afterPath="$PROJECT_DIR$/backend/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/dbConnection.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/dbConnection.py" afterDir="false" />
+    <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="Added a config file plus a try catch block for the dbConnection">
+      <change beforePath="$PROJECT_DIR$/backend/flaskApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/flaskApp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,11 +76,20 @@
       <option name="project" value="LOCAL" />
       <updated>1747788038614</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added a config file plus a try catch block for the dbConnection">
+      <option name="closed" value="true" />
+      <created>1747789201801</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747789201801</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated comments and added a diagram. Also updated db connections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated comments and added a diagram. Also updated db connections" />
+    <MESSAGE value="Added a config file plus a try catch block for the dbConnection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a config file plus a try catch block for the dbConnection" />
   </component>
 </project>
