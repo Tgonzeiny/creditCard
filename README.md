@@ -50,3 +50,8 @@ Phase 4: GPS inclusion for mobile app to accurately determine the MCC.
     Outstanding Bugs
 
     Change Log
+
+    Future Improvements:
+
+1. Upgrade the verification for user log in and card verification to bloom filter (for fun)
+2. Add phone numbers and SMI verification

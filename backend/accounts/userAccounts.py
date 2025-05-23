@@ -14,5 +14,19 @@ class userAccounts:
         self.cursor.execute("SELECT * FROM users WHERE email = %s", (email,))
         return self.cursor.fetchone() is not None
 
-    def createUser(selfself, username, ):
+    def createUser(self, username, password, email):
+        if self.userExists(email):
+            return {"success": False, "message": "User already exits"}
+
+        self.cursor.execute(
+            "INSERT INTO users (username, email, password) VALUES (%s, %s, %s)",
+            (username, email, password)
+        )
+        self.conn.commit()
+        return {"success": True, "message": "User created successfully"}
+
+    def close(self):
+        self.cursor.close()
+        self.conn.close()
+
 
