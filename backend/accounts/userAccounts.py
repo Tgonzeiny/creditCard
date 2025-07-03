@@ -1,13 +1,13 @@
 #This class will handle all account based interactions with the database.
 
-import mysql.connector
+import psycopg2
 from backend.config import DBConfig
 
 class userAccounts:
 
     def __init__(self):
-        self.conn = mysql.connector.connect(**DBConfig)
-        self.cursor = self.conn.cursor(dictionary=True)
+        self.conn = psycopg2.connect(**DBConfig)
+        self.cursor = self.conn.cursor()
 
     #Checks if email exists in the users database and returns True if it does
     def userExists(self, email):
