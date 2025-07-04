@@ -16,7 +16,7 @@ class userAccounts:
 
     def createUser(self, username, email, password):
         if self.userExists(email):
-            return {"success": False, "message": "User already exits"}
+            return {"success": False, "message": "User already exists"}
 
         self.cursor.execute(
             "INSERT INTO users (username, email, password) VALUES (%s, %s, %s)",
