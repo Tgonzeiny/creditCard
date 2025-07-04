@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="testing the pipeline">
-      <change afterPath="$PROJECT_DIR$/backend/accounts/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/routes/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/testCreateUser.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/testCreateUser.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +85,7 @@
       <workItem from="1751498766175" duration="3491000" />
       <workItem from="1751507816834" duration="1982000" />
       <workItem from="1751516375512" duration="3584000" />
-      <workItem from="1751651723663" duration="3423000" />
+      <workItem from="1751651723663" duration="3664000" />
     </task>
     <task id="LOCAL-00001" summary="Updated comments and added a diagram. Also updated db connections">
       <option name="closed" value="true" />
@@ -179,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751655000004</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="testing the pipeline">
+      <option name="closed" value="true" />
+      <created>1751655185657</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1751655185657</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
