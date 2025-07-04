@@ -50,8 +50,5 @@ jobs:
       run: |
         until pg_isready -h localhost -p 5432; do sleep 1; done
 
-    - name: Set PYTHONPATH
-      run: export PYTHONPATH=$PYTHONPATH:$(pwd)
-
     - name: Run tests
-      run: pytest backend/tests/testCreateUser.py
+      run: cd creditCard && PYTHONPATH=$(pwd) pytest backend/tests/testCreateUser.py
