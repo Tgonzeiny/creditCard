@@ -51,4 +51,5 @@ jobs:
         until pg_isready -h localhost -p 5432; do sleep 1; done
 
     - name: Run tests
-      run: cd creditCard && PYTHONPATH=$(pwd) pytest backend/tests/testCreateUser.py
+      run: PYTHONPATH=$(pwd)/creditcardapp pytest creditcardapp/backend/tests/testCreateUser.py
+
