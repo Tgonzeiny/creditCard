@@ -14,7 +14,7 @@ class userAccounts:
         self.cursor.execute("SELECT * FROM users WHERE email = %s", (email,))
         return self.cursor.fetchone() is not None
 
-    def createUser(self, username, password, email):
+    def createUser(self, username, email, password):
         if self.userExists(email):
             return {"success": False, "message": "User already exits"}
 
