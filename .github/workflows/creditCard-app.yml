@@ -51,6 +51,8 @@ jobs:
         until pg_isready -h localhost -p 5432; do sleep 1; done
 
     - name: Run tests
-      run: PYTHONPATH=$(pwd) pytest backend/tests/
+      run: |
+        PYTHONPATH=$(pwd) pytest backend/tests/
+
 
 

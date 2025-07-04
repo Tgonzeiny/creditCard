@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="Started to implement accounts into the database.">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/tests/testCreateUser.py" afterDir="false" />
+    <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="testing the pipeline">
+      <change afterPath="$PROJECT_DIR$/backend/accounts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/routes/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tests/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/accounts/userAccounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/accounts/userAccounts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +89,7 @@
       <workItem from="1751498766175" duration="3491000" />
       <workItem from="1751507816834" duration="1982000" />
       <workItem from="1751516375512" duration="3584000" />
-      <workItem from="1751651723663" duration="1223000" />
+      <workItem from="1751651723663" duration="3423000" />
     </task>
     <task id="LOCAL-00001" summary="Updated comments and added a diagram. Also updated db connections">
       <option name="closed" value="true" />
@@ -123,7 +123,63 @@
       <option name="project" value="LOCAL" />
       <updated>1747884722435</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Created a CI/CD with unit testing to ensure all changes are tested prior to pushing.">
+      <option name="closed" value="true" />
+      <created>1751653086783</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1751653086783</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Created a CI/CD with unit testing to ensure all changes are tested prior to pushing.">
+      <option name="closed" value="true" />
+      <created>1751653838199</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1751653838199</updated>
+    </task>
+    <task id="LOCAL-00007" summary="testing the pipeline">
+      <option name="closed" value="true" />
+      <created>1751654073447</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1751654073447</updated>
+    </task>
+    <task id="LOCAL-00008" summary="testing the pipeline">
+      <option name="closed" value="true" />
+      <created>1751654403536</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1751654403536</updated>
+    </task>
+    <task id="LOCAL-00009" summary="testing the pipeline">
+      <option name="closed" value="true" />
+      <created>1751654660179</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1751654660179</updated>
+    </task>
+    <task id="LOCAL-00010" summary="testing the pipeline">
+      <option name="closed" value="true" />
+      <created>1751654811366</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1751654811366</updated>
+    </task>
+    <task id="LOCAL-00011" summary="testing the pipeline">
+      <option name="closed" value="true" />
+      <created>1751655000004</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1751655000004</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +190,9 @@
     <MESSAGE value="Added a config file plus a try catch block for the dbConnection" />
     <MESSAGE value="Worked on flask app" />
     <MESSAGE value="Started to implement accounts into the database." />
-    <option name="LAST_COMMIT_MESSAGE" value="Started to implement accounts into the database." />
+    <MESSAGE value="Created a CI/CD with unit testing to ensure all changes are tested prior to pushing." />
+    <MESSAGE value="testing the pipeline" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing the pipeline" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/creditCard$flaskApp.coverage" NAME="flaskApp Coverage Results" MODIFIED="1751519182992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
