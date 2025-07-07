@@ -7,6 +7,7 @@
     <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="testing the pipeline, added sql file for db to the needed tables.">
       <change beforePath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +114,7 @@
       <workItem from="1751516375512" duration="3584000" />
       <workItem from="1751651723663" duration="4611000" />
       <workItem from="1751859542974" duration="2649000" />
-      <workItem from="1751925748857" duration="2624000" />
+      <workItem from="1751925748857" duration="3061000" />
     </task>
     <task id="LOCAL-00001" summary="Updated comments and added a diagram. Also updated db connections">
       <option name="closed" value="true" />
@@ -251,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751930086707</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="testing the pipeline, added sql file for db to the needed tables.">
+      <option name="closed" value="true" />
+      <created>1751930370559</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1751930370559</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

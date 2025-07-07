@@ -54,6 +54,8 @@ jobs:
       run: |
         PGPASSWORD=$DB_PASSWORD psql -h localhost -U $DB_USER -d $DB_NAME -f backend/tests/testdb/test_user_db.sql
 
-    - name: Run tests
+    - name: Run tests with coverage
       run: |
-        PYTHONPATH=$(pwd) pytest backend/tests/
+        PYTHONPATH=$(pwd) pytest --cov=backend backend/tests/ > result.log
+        coverage report
+        coverage xml
