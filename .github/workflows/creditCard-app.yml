@@ -59,8 +59,9 @@ jobs:
         PYTHONPATH=$(pwd) pytest --cov=backend backend/tests/ > result.log
 
     - name: Upload coverage result log
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: test-log
         path: result.log
-
+        retention-days: 1
+        compression-level: 6
