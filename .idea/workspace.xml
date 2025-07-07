@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="testing the pipeline, added sql file for db to the needed tables.">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="testing the pipeline, added code coverage" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +110,7 @@
       <workItem from="1751516375512" duration="3584000" />
       <workItem from="1751651723663" duration="4611000" />
       <workItem from="1751859542974" duration="2649000" />
-      <workItem from="1751925748857" duration="3061000" />
+      <workItem from="1751925748857" duration="3584000" />
     </task>
     <task id="LOCAL-00001" summary="Updated comments and added a diagram. Also updated db connections">
       <option name="closed" value="true" />
@@ -260,7 +256,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751930370559</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="testing the pipeline, added code coverage">
+      <option name="closed" value="true" />
+      <created>1751930819992</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1751930819992</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +278,8 @@
     <MESSAGE value="Created a CI/CD with unit testing to ensure all changes are tested prior to pushing." />
     <MESSAGE value="testing the pipeline" />
     <MESSAGE value="testing the pipeline, added sql file for db to the needed tables." />
-    <option name="LAST_COMMIT_MESSAGE" value="testing the pipeline, added sql file for db to the needed tables." />
+    <MESSAGE value="testing the pipeline, added code coverage" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing the pipeline, added code coverage" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/creditCard$flaskApp.coverage" NAME="flaskApp Coverage Results" MODIFIED="1751519182992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
