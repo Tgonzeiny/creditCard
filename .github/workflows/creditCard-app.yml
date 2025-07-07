@@ -50,9 +50,13 @@ jobs:
       run: |
         until pg_isready -h localhost -p 5432; do sleep 1; done
 
+    - name: Set up database schema
+      run: |
+        psql -h localhost -U $DB_USER -d $DB_NAME -f backend/tests/testdb/test_user_db.sql
+      env:
+        POSTGRES_PASSWORD: $DB_PASSWORD
+
+
     - name: Run tests
       run: |
         PYTHONPATH=$(pwd) pytest backend/tests/
-
-
-
