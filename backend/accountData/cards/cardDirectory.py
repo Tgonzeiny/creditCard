@@ -45,4 +45,4 @@ class cardDirectory:
 
     def close(self):
         self.conn.close()
-        self.cursor.clsoe()
+        self.cursor.close()

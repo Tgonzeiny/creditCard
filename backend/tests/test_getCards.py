@@ -12,7 +12,7 @@ def test_getCards_none():
 #Adds a dummy card and tests if it's in the database
 def test_getCards():
     request = cardDirectory()
-    add = request.addCard("AMEX Gold Card", "Visa", "AMEX")
+    add = request.addCard("AMEX Gold Card", "AMEX", "AMEX")
     assert add["success"] == True
 
     response = request.getAllCards()
