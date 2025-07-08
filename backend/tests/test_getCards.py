@@ -1,18 +1,23 @@
 import pytest
 from backend.accountData.cards.cardDirectory import cardDirectory
 
-#Checks if there is no card dat in the database.
+#Checks if there is no card data in the database.
 def test_getCards_none():
     request = cardDirectory()
     response = request.getAllCards()
 
-    assert response is None
+    assert response == []
     request.close()
 
 #Adds a dummy card and tests if it's in the database
 def test_getCards():
     request = cardDirectory()
     add = request.addCard("AMEX Gold Card", "Visa", "AMEX")
+    assert add["success"] == True
+
     response = request.getAllCards()
-    assert response is not None
+    assert isinstance(response, list)
+
+    # Check that at least one card has the expected name
+    assert any(card["name"] == "AMEX Gold Card" for card in response)
     request.close()

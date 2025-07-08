@@ -12,7 +12,7 @@ class cardDirectory:
 
     #Gets a list of all cards to query from when adding a new card for your profile
     def getAllCards(self):
-        self.cursor.execute("SELECT id, name, network, issuer FROM allCards ORDER BY namne ASC;")
+        self.cursor.execute("SELECT id, name, network, issuer FROM allCards ORDER BY name ASC;")
         rows = self.cursor.fetchall()
 
         return [
