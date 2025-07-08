@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS credit_cards (
+CREATE TABLE IF NOT EXISTS allCards (
     id SERIAL PRIMARY KEY,
     name TEXT NOT NULL UNIQUE,
     network TEXT NOT NULL,
