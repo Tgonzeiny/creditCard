@@ -21,3 +21,10 @@ def test_getCards():
     # Check that at least one card has the expected name
     assert any(card["name"] == "AMEX Gold Card" for card in response)
     request.close()
+
+#Tests if duplicate card exists
+def test_getDupCards():
+    request = cardDirectory()
+    add = request.addCard("AMEX Gold Card", "AMEX", "AMEX")
+    assert add["success"] == False
+    request.close()
