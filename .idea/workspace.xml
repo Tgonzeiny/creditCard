@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="testing the pipeline, added code coverage">
-      <change afterPath="$PROJECT_DIR$/backend/accountData/cards/cardDirectory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/tests/test_getCards.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/tests/testdb/test_all_cards.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/flaskApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/flaskApp.py" afterDir="false" />
-    </list>
+    <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="added a database for all credit card names with a unique ID to set up future database for user ids to card ids. Still implementing unit test for it" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +110,7 @@
       <workItem from="1751516375512" duration="3584000" />
       <workItem from="1751651723663" duration="4611000" />
       <workItem from="1751859542974" duration="2649000" />
-      <workItem from="1751925748857" duration="8597000" />
+      <workItem from="1751925748857" duration="8683000" />
     </task>
     <task id="LOCAL-00001" summary="Updated comments and added a diagram. Also updated db connections">
       <option name="closed" value="true" />
@@ -287,7 +280,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751932307817</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="added a database for all credit card names with a unique ID to set up future database for user ids to card ids. Still implementing unit test for it">
+      <option name="closed" value="true" />
+      <created>1751936690154</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1751936690154</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +303,8 @@
     <MESSAGE value="testing the pipeline" />
     <MESSAGE value="testing the pipeline, added sql file for db to the needed tables." />
     <MESSAGE value="testing the pipeline, added code coverage" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing the pipeline, added code coverage" />
+    <MESSAGE value="added a database for all credit card names with a unique ID to set up future database for user ids to card ids. Still implementing unit test for it" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a database for all credit card names with a unique ID to set up future database for user ids to card ids. Still implementing unit test for it" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/creditCard$flaskApp.coverage" NAME="flaskApp Coverage Results" MODIFIED="1751519182992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />

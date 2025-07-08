@@ -52,7 +52,8 @@ jobs:
 
     - name: Set up database schema
       run: |
-        PGPASSWORD=$DB_PASSWORD psql -h localhost -U $DB_USER -d $DB_NAME -f backend/tests/testdb/
+        PGPASSWORD=$DB_PASSWORD psql -h localhost -U $DB_USER -d $DB_NAME -f backend/tests/testdb/test_all_cards.sql
+        PGPASSWORD=$DB_PASSWORD psql -h localhost -U $DB_USER -d $DB_NAME -f backend/tests/testdb/test_user_db.sql
 
     - name: Run tests
       run: |
