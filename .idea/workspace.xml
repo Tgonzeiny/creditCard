@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="testing the pipeline, added code coverage">
+      <change afterPath="$PROJECT_DIR$/backend/accountData/cards/cardDirectory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tests/test_getCards.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tests/testdb/test_all_cards.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/flaskApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/flaskApp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +22,8 @@
       <list>
         <option value="workflow" />
         <option value="Python Unit Test" />
-        <option value="Python Script" />
         <option value="SQL File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -113,7 +117,7 @@
       <workItem from="1751516375512" duration="3584000" />
       <workItem from="1751651723663" duration="4611000" />
       <workItem from="1751859542974" duration="2649000" />
-      <workItem from="1751925748857" duration="4347000" />
+      <workItem from="1751925748857" duration="8597000" />
     </task>
     <task id="LOCAL-00001" summary="Updated comments and added a diagram. Also updated db connections">
       <option name="closed" value="true" />
@@ -275,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751931652500</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="testing the pipeline, added code coverage">
+      <option name="closed" value="true" />
+      <created>1751932307817</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1751932307817</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
