@@ -22,15 +22,12 @@ def getAllCards():
     cd.close()
     return jsonify({"cards":cards})
 
-#@flaskApp.route("/")
-#def home():
-    #return jsonify({"message": "Welcome to creditCardAPI"})
+@flaskApp.route("/")
+def home():
+    return jsonify({"message": "Welcome to creditCardAPI"})
 
 #added later
 #addUser
 #getUserCards
 #getCardRewards
 #addCardToUser
-
-#if __name__ == "__main__":
-    #flaskApp.run(debug=True)
