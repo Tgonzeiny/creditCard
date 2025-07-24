@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="Missed a test case when there's a duplicate case.">
-      <change afterPath="$PROJECT_DIR$/backend/accountData/cards/cardRewardsManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" afterDir="false" />
+    <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="Starting to build out the database and logic for every card with reward categories">
+      <change afterPath="$PROJECT_DIR$/backend/tests/testdb/test_user_cards.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/accountData/cards/cardDetails.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/testdb/test_card_rewards.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/flaskApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/flaskApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/accountData/cards/cardRewardsManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/accountData/cards/cardRewardsManager.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -61,7 +64,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;rewardLogic&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Thomas Gonzalez/Desktop/creditCard/creditCard&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -118,8 +121,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-PY-251.26094.141" />
-        <option value="bundled-python-sdk-9f8e2b94138c-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26094.141" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PY-251.26927.90" />
+        <option value="bundled-python-sdk-41e8cd69c857-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.90" />
       </set>
     </attachedChunks>
   </component>
@@ -140,7 +143,11 @@
       <workItem from="1751925748857" duration="8683000" />
       <workItem from="1751936752994" duration="4587000" />
       <workItem from="1752000307454" duration="2000" />
-      <workItem from="1752020304096" duration="4450000" />
+      <workItem from="1752020304096" duration="4798000" />
+      <workItem from="1752812434701" duration="89000" />
+      <workItem from="1752812621508" duration="524000" />
+      <workItem from="1753233365011" duration="2000" />
+      <workItem from="1753316588919" duration="3629000" />
     </task>
     <task id="LOCAL-00001" summary="Updated comments and added a diagram. Also updated db connections">
       <option name="closed" value="true" />
@@ -358,7 +365,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751940685895</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Starting to build out the database and logic for every card with reward categories">
+      <option name="closed" value="true" />
+      <created>1752027729658</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1752027729658</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +393,8 @@
     <MESSAGE value="attempting to fix workflow and added unit test for new database and requests" />
     <MESSAGE value="This should fix the logic now, SQL statements make everything lowercase." />
     <MESSAGE value="Missed a test case when there's a duplicate case." />
-    <option name="LAST_COMMIT_MESSAGE" value="Missed a test case when there's a duplicate case." />
+    <MESSAGE value="Starting to build out the database and logic for every card with reward categories" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting to build out the database and logic for every card with reward categories" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/creditCard$flaskApp.coverage" NAME="flaskApp Coverage Results" MODIFIED="1751519182992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
