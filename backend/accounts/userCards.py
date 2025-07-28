@@ -1,5 +1,6 @@
 import psycopg2
 from backend.getDbConnection import getdbConnection
+#Used to compare added cards to accounts
 
 class UserCards:
     def __init__(self):
