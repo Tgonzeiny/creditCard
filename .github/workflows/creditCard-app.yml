@@ -2,9 +2,9 @@ name: creditCard-app.yml
 
 on:
   push:
-    branches: [ main ]
+    branches: '**'
   pull_request:
-    branches: [ main ]
+    branches: '**'
 
 jobs:
   build:
@@ -54,9 +54,9 @@ jobs:
       run: |
         export PGPASSWORD=$DB_PASSWORD
         psql -h localhost -U $DB_USER -d $DB_NAME -f backend/tests/testdb/test_all_cards.sql
-        psql -h localhost -U $DB_USER -d $DB_NAME -f backend/tests/testdb/test_user_cards.sql
         psql -h localhost -U $DB_USER -d $DB_NAME -f backend/tests/testdb/test_user_db.sql
         psql -h localhost -U $DB_USER -d $DB_NAME -f backend/tests/testdb/test_card_rewards.sql
+        psql -h localhost -U $DB_USER -d $DB_NAME -f backend/tests/testdb/test_user_cards.sql
 
 
     - name: Run tests
