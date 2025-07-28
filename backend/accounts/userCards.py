@@ -10,7 +10,7 @@ class UserCards:
         try:
             self.cursor.execute(
                 """
-                INSERT INTO user_cards (user_id, card_id, nickname)
+                INSERT INTO usercards (user_id, card_id, nickname)
                 VALUES (%s, %s, %s)
                 ON CONFLICT (user_id, card_id) DO NOTHING;
                 """,
@@ -26,8 +26,8 @@ class UserCards:
         self.cursor.execute(
             """
             SELECT uc.card_id, c.card_name, c.network, c.issuer, uc.nickname
-            FROM user_cards uc
-            JOIN credit_cards c ON uc.card_id = c.id
+            FROM usercards uc
+            JOIN allcards c ON uc.card_id = c.id
             WHERE uc.user_id = %s
             """,
             (user_id,)
@@ -37,7 +37,7 @@ class UserCards:
     def removeCardFromUser(self, user_id, card_id):
         self.cursor.execute(
             """
-            DELETE FROM user_cards
+            DELETE FROM usercards
             WHERE user_id = %s AND card_id = %s
             """,
             (user_id, card_id)
