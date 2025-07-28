@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="building unit tests for new class, forgot to update yml">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="building unit tests for new class, forgot to update yml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -175,7 +172,7 @@
       <workItem from="1753403270920" duration="2595000" />
       <workItem from="1753493050649" duration="77000" />
       <workItem from="1753664493857" duration="3037000" />
-      <workItem from="1753668723760" duration="14000" />
+      <workItem from="1753668723760" duration="261000" />
     </task>
     <task id="LOCAL-00001" summary="Updated comments and added a diagram. Also updated db connections">
       <option name="closed" value="true" />
@@ -425,7 +422,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753668054870</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="building unit tests for new class, forgot to update yml">
+      <option name="closed" value="true" />
+      <created>1753668793039</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1753668793039</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
