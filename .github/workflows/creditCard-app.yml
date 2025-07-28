@@ -2,9 +2,9 @@ name: creditCard-app.yml
 
 on:
   push:
-    branches: [ main ]
+    branches: '**'
   pull_request:
-    branches: [ main ]
+    branches: '**'
 
 jobs:
   build:
