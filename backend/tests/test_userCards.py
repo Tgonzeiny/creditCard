@@ -5,7 +5,7 @@ from backend.accounts.userCards import UserCards
 
 @pytest.fixture
 def mock_conn_cursor():
-    with patch('backend.classes.userCards.getdbConnection') as mock_get_conn:
+    with patch('backend.accounts.userCards.getdbConnection') as mock_get_conn:
         mock_conn = MagicMock()
         mock_cursor = MagicMock()
         mock_conn.cursor.return_value = mock_cursor

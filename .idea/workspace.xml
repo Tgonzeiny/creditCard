@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="Added a comment">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" afterDir="false" />
+    <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="updated branches that allow for tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/test_userCards.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/test_userCards.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +177,7 @@
       <workItem from="1753493050649" duration="77000" />
       <workItem from="1753664493857" duration="3037000" />
       <workItem from="1753668723760" duration="261000" />
-      <workItem from="1753669145924" duration="821000" />
+      <workItem from="1753669145924" duration="1243000" />
     </task>
     <task id="LOCAL-00001" summary="Updated comments and added a diagram. Also updated db connections">
       <option name="closed" value="true" />
@@ -450,7 +451,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753669248034</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="updated branches that allow for tests">
+      <option name="closed" value="true" />
+      <created>1753674477972</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1753674477972</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +484,8 @@
     <MESSAGE value="building unit tests for new class" />
     <MESSAGE value="building unit tests for new class, forgot to update yml" />
     <MESSAGE value="Added a comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a comment" />
+    <MESSAGE value="updated branches that allow for tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated branches that allow for tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/creditCard$flaskApp.coverage" NAME="flaskApp Coverage Results" MODIFIED="1751519182992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
