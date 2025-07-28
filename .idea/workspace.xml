@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="Starting to build logic for the user card database.">
-      <change afterPath="$PROJECT_DIR$/backend/tests/test_userCards.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/accounts/userCards.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/accounts/userCards.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/tests/testdb/test_user_cards.sql" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/testdb/test_user_cards.sql" afterDir="false" />
+    <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="building unit tests for new class">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/creditCard-app.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +55,7 @@
     "Python tests.Python tests in testCreateUser.py.executor": "Run",
     "Python tests.Python tests in test_create_user.py.executor": "Run",
     "Python tests.pytest in test_getCards.py.executor": "Run",
+    "Python tests.pytest in test_userCards.py.executor": "Run",
     "Python.flaskApp.executor": "Run",
     "Python.main.executor": "Run",
     "Python.recommendedCardRoute.executor": "Run",
@@ -82,7 +80,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.pytest in test_getCards.py">
+  <component name="RunManager" selected="Python tests.pytest in test_userCards.py">
     <configuration name="Python tests in test_create_user.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="creditCard" />
       <option name="ENV_FILES" value="" />
@@ -117,8 +115,27 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_userCards.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="creditCard" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/backend/tests/test_userCards.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_userCards.py" />
         <item itemvalue="Python tests.pytest in test_getCards.py" />
         <item itemvalue="Python tests.Python tests in test_create_user.py" />
       </list>
@@ -156,7 +173,7 @@
       <workItem from="1753316588919" duration="4486000" />
       <workItem from="1753403270920" duration="2595000" />
       <workItem from="1753493050649" duration="77000" />
-      <workItem from="1753664493857" duration="2713000" />
+      <workItem from="1753664493857" duration="2826000" />
     </task>
     <task id="LOCAL-00001" summary="Updated comments and added a diagram. Also updated db connections">
       <option name="closed" value="true" />
@@ -390,7 +407,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753329255841</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="building unit tests for new class">
+      <option name="closed" value="true" />
+      <created>1753667995378</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1753667995378</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,10 +437,12 @@
     <MESSAGE value="Missed a test case when there's a duplicate case." />
     <MESSAGE value="Starting to build out the database and logic for every card with reward categories" />
     <MESSAGE value="Starting to build logic for the user card database." />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting to build logic for the user card database." />
+    <MESSAGE value="building unit tests for new class" />
+    <option name="LAST_COMMIT_MESSAGE" value="building unit tests for new class" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/creditCard$flaskApp.coverage" NAME="flaskApp Coverage Results" MODIFIED="1751519182992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
+    <SUITE FILE_PATH="coverage/creditCard$pytest_in_test_userCards_py.coverage" NAME="pytest in test_userCards.py Coverage Results" MODIFIED="1753667937703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/tests" />
     <SUITE FILE_PATH="coverage/creditCard$pytest_in_test_getCards_py.coverage" NAME="pytest in test_getCards.py Coverage Results" MODIFIED="1751940639566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/tests" />
     <SUITE FILE_PATH="coverage/creditCard$.coverage" NAME=" Coverage Results" MODIFIED="1751939870574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/tests" />
     <SUITE FILE_PATH="coverage/creditCard$userRoutes.coverage" NAME="userRoutes Coverage Results" MODIFIED="1751519105932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/routes" />
