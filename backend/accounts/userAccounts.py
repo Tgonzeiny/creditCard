@@ -25,6 +25,17 @@ class userAccounts:
         self.conn.commit()
         return {"success": True, "message": "User created successfully"}
 
+    def loginUser(self, email, password):
+        self.cursor.execute(
+            "SELECT * FROM users WHERE email = %s AND password = %s",
+            (email, password)
+        )
+        user = self.cursor.fetchone()
+        if user:
+            return {"success": True, "message": "Login successful", "user_id": user[0]}
+        else:
+            return {"success": False, "message": "Invalid username or password"}
+            
     def close(self):
         self.cursor.close()
         self.conn.close()

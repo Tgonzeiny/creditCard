@@ -1,16 +1,10 @@
-import { Image } from 'expo-image';
 import { Platform, StyleSheet } from 'react-native';
-
-import { HelloWave } from '@/components/HelloWave';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
 import { View, Text, Button} from 'react-native';
 import { Link } from 'expo-router';
 
 export default function HomeScreen() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#589dd6ff' }}>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#84ca8eff' }}>
       <Text style={{ fontSize: 32, marginBottom: 20 }}>Welcome</Text>
 
       <Link href="/login" asChild>
