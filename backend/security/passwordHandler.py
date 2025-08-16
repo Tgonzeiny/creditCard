@@ -1,5 +1,5 @@
 import bcrypt
-from .security_config import BCRYPT_ROUNDS, PASSWORD_PEPPER
+from backend.security.security_config import BCRYPT_ROUNDS, PASSWORD_PEPPER
 #Built to handle password hashing and verification using bcrypt.
 
 class PasswordHandler:
