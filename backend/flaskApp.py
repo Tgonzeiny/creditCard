@@ -20,24 +20,6 @@ def getAllCards():
     cd.close()
     return jsonify({"cards":cards})
 
-# This route will handle user login
-@flaskApp.route('/api/login', methods=['POST'])
-def login():
-    print('Login request received')
-    data = request.get_json()
-    email = data['email']
-    password = data['password']
-    login = userAccounts().loginUser(email, password)
-    if login['success']:
-        return jsonify({
-            "message": login['message'], "user_id": login['user_id']
-        }), 200
-    else:
-        print("Login failed for email:", email)
-        return jsonify({
-            "message": login['message']
-        }), 401
-
 @flaskApp.route("/")
 def home():
     return jsonify({"message": "Welcome to creditCardAPI"})

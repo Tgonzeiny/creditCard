@@ -1,57 +1,86 @@
 # creditCard
-**Current Phase  0.1**
+**Current Phase: 0.1**
 
-    Current Libraries and planned Tech stack
+---
 
-- The software backend shall be written entirely in Python utilizing flask api.
-- The software shall use a mySQL database 
-- The software shall use flask to handle web backend requests on AWS
-- The software shall use React Native for the frontend to ensure we will not have to create two apps. More specifically it will be using expo.
+## Technology Stack
 
+- **Backend:** Python using Flask API  
+- **Database:** PostgreSQL (previously MySQL)  
+- **Frontend:** React Native with Expo (single codebase for iOS and Android)  
+- **Hosting:** Flask backend can be deployed on AWS; database can be hosted on AWS RDS  
 
-    Diagram 1.0
+---
 
-  iOS App (React Native)
-       ↓     ↑
-  [ sends request ]
-       ↓     ↑
-     Flask Backend (on AWS)
-       ↓     ↑
-  [ queries MySQL ]
-       ↓     ↑
-   Cloud Database (AWS RDS)
+## Architecture Diagram
 
-    Development Plan
-    
-This app serves the purpose of providing the consumer with an optimal credit card for each purchase.
-The current plan is for the user to provide a list of credit cards, in which the backend will query for the optimal credit card given the user's MCC and location.
-For example, if the user is at or around a Mcdonalds and opens apple pay or gpay the user will be prompted with a banner saying "Use X card for this purchase".
-As we logistically get closer this section will be ironed out.
+iOS / Android App (React Native)
+↓ ↑
+[ Sends API Requests ]
+↓ ↑
+Flask Backend (Python)
+↓ ↑
+[ Queries PostgreSQL Database ]
+↓ ↑
+Cloud Database (AWS RDS)
+---
 
-The schema for the database will consist of three tables: 
-1. User tables - Will consist of user and login information/email
-2. Card ID - Will consist of the cardID and card type
-3. User owned cards - Will consist of user id corresponding to card ID.
-4. Reward information - Will consist of card ID with various MCC category rewards
-5. MCC Categories - Will create an ID for MCCs that correspond with a category.
+## Current Functionality
 
+This app currently allows users to:  
+1. **Create an account** with email and password (hashed and salted using bcrypt).  
+2. **Log in** to their account.  
+3. **Add credit cards** to their account from a predefined list.  
+4. **Fetch user cards** from the backend.  
 
-    Development Phases:
-Phase 1: Will consist of pulling a given location MCC (Merchant category codes)
-to decide which optimal credit card to use out of a given list
+> **Note:** The app is currently a prototype. It does **not** access Apple Pay directly but simulates credit card recommendations based on stored card rewards and Merchant Category Codes (MCCs).  
 
-Phase 2: Will consist of creating user profiles and using previous logic to find
-an optimal MCC for the given user. Including integration of PlaidAPI
+---
 
-Phase 3: Integration onto IoS and android.
+## Database Schema
 
-Phase 4: GPS inclusion for mobile app to accurately determine the MCC.
+1. **Users** – stores login information (email, hashed password)  
+2. **Cards** – stores card ID, name, network, and issuer  
+3. **UserCards** – maps user IDs to their owned card IDs, optionally with a nickname  
+4. **CardRewards** – stores card ID with MCC category rewards (e.g., 2x points for groceries)  
+5. **MCCCategories** – maps MCC IDs to general categories (e.g., groceries, dining)  
 
-    Outstanding Bugs
+---
 
-    Change Log
+## Development Phases
 
-    Future Improvements:
+- **Phase 1:** Handle MCCs to determine optimal credit card for a purchase.  
+- **Phase 2:** Create user profiles and integrate Plaid API (optional) to automatically fetch card names.  
+- **Phase 3:** Deploy fully on iOS and Android using Expo.  
+- **Phase 4:** Include GPS to detect MCC based on user location.  
 
-1. Upgrade the verification for user log in and card verification to bloom filter (for fun)
-2. Add phone numbers and SMI verification
+---
+
+## Running the Project Locally
+
+### Backend (Flask)
+
+```bash
+# Create a virtual environment
+python -m venv venv
+
+# Activate it
+# Windows
+venv\Scripts\activate
+# macOS/Linux
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the backend
+python flaskApp.py
+
+# Navigate to the frontend folder
+cd cardwise-app
+
+# Install dependencies
+npm install
+
+# Start Expo
+npx expo start
