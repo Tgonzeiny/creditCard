@@ -10,9 +10,9 @@ def test_password_hashing():
     assert hashed_password is not None
 
     # Verify the password
-    is_correct = handler.verify_password(password, hashed_password)
+    is_correct = handler.check_password(password, hashed_password)
     assert is_correct == True
 
     # Test with an incorrect password
-    is_incorrect = handler.verify_password("wrongPassword", hashed_password)
+    is_incorrect = handler.check_password("wrongPassword", hashed_password)
     assert is_incorrect == False
