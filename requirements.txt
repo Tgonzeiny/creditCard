@@ -4,3 +4,4 @@ psycopg2-binary
 pytest
 coverage
 pytest-cov
+bcrypt
