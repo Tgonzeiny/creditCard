@@ -1,14 +1,14 @@
 # creditCard
 **Current Phase: 0.1**
 
----
+## Technology Stack & Versions
 
-## Technology Stack
-
-- **Backend:** Python using Flask API  
-- **Database:** PostgreSQL (previously MySQL)  
-- **Frontend:** React Native with Expo (single codebase for iOS and Android)  
-- **Hosting:** Flask backend can be deployed on AWS; database can be hosted on AWS RDS  
+- **Backend:** Python **3.11.6** using Flask **2.3.3**  
+- **Database:** PostgreSQL **15** (migrated from MySQL)  
+- **Frontend:** React Native **0.74** with Expo **51** (single codebase for iOS and Android)  
+- **Package Manager:** Node.js **20.x** + npm **10.x**  
+- **Authentication & Security:** bcrypt **4.0.1**, PyJWT **2.8.0**  
+- **Hosting (planned):** Flask backend on AWS (EC2/Elastic Beanstalk), PostgreSQL on AWS RDS  
 
 ---
 
@@ -62,11 +62,12 @@ This app currently allows users to:
 
 ```bash
 # Create a virtual environment
-python -m venv venv
+.\venv\Scripts\activate
 
 # Activate it
 # Windows
 venv\Scripts\activate
+
 # macOS/Linux
 source venv/bin/activate
 
@@ -74,7 +75,10 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # Run the backend
-python flaskApp.py
+set FLASK_APP=backend/flaskApp.py
+set FLASK_ENV=development
+flask run --host=0.0.0.0 --port=5000
+flask run
 
 # Navigate to the frontend folder
 cd cardwise-app

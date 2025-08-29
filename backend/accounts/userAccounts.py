@@ -14,27 +14,33 @@ class userAccounts:
         self.cursor.execute("SELECT * FROM users WHERE email = %s", (email,))
         return self.cursor.fetchone() is not None
 
-    def createUser(self, username, email, password):
+    def createUser(self, email, password):
         if self.userExists(email):
             return {"success": False, "message": "User already exists"}
 
         self.cursor.execute(
-            "INSERT INTO users (username, email, password) VALUES (%s, %s, %s)",
-            (username, email, password)
+            "INSERT INTO users (email, password) VALUES (%s, %s)",
+            (email, password)
         )
         self.conn.commit()
         return {"success": True, "message": "User created successfully"}
 
     def loginUser(self, email, password):
         self.cursor.execute(
-            "SELECT * FROM users WHERE email = %s AND password = %s",
-            (email, password)
+            "SELECT * FROM users WHERE email = %s",
+            (email,)
         )
         user = self.cursor.fetchone()
         if user:
-            return {"success": True, "message": "Login successful", "user_id": user[0]}
+            stored_hash = user[1]
+            from backend.security.passwordHandler import PasswordHandler
+            passwordHandler = PasswordHandler()
+            if passwordHandler.check_password(stored_hash, password):
+                return {"success": True, "message": "Login successful", "user_id": user[0]}
+            else:
+                return {"success": False, "message": "Invalid password"}
         else:
-            return {"success": False, "message": "Invalid username or password"}
+            return {"success": False, "message": "Invalid email or password"}
             
     def close(self):
         self.cursor.close()

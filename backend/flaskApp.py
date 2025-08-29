@@ -7,25 +7,29 @@ from backend.accounts.userAccounts import userAccounts
 #from models import userModel, cardModel, rewardModel
 
 
-flaskApp = Flask(__name__)
-CORS(flaskApp) #allows the app to be called from other sources
+app = Flask(__name__)
+CORS(app) #allows the app to be called from other sources
 
 
-flaskApp.register_blueprint(userRoutes)
+app.register_blueprint(userRoutes)
 
-@flaskApp.route('/getAllCards', methods=['GET'])
+#for debugging purposes, prints all the routes in the app
+for rule in app.url_map.iter_rules():
+    print(rule)
+
+@app.route('/getAllCards', methods=['GET'])
 def getAllCards():
     cd = cardDirectory()
     cards = cd.getAllCards()
     cd.close()
     return jsonify({"cards":cards})
 
-@flaskApp.route("/")
+@app.route("/")
 def home():
     return jsonify({"message": "Welcome to creditCardAPI"})
 
 if __name__ == '__main__':
-    flaskApp.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
 
 #added later
 #addUser

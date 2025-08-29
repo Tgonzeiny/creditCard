@@ -11,4 +11,5 @@ class PasswordHandler:
     @staticmethod
     def check_password(hashed: str, password: str) -> bool:
         """Checks a password against a hashed password."""
-        return bcrypt.checkpw((password+PASSWORD_PEPPER).encode('utf-8'), hashed.encode('utf-8'))
+        salt = (password + PASSWORD_PEPPER).encode('utf-8')
+        return bcrypt.checkpw(salt, hashed.encode('utf-8'))
