@@ -1,4 +1,4 @@
-#This class serves as a hook for adding new cards with mcc values
+#This class serves as a hook for adding new cardFunctions with mcc values
 
 import psycopg2
 from backend.config import DBConfig

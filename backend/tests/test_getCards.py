@@ -1,5 +1,5 @@
 import pytest
-from backend.accountData.cards.cardDirectory import cardDirectory
+from backend.accountData.cardFunctions.cardDirectory import cardDirectory
 
 #Checks if there is no card data in the database.
 def test_getCards_none():

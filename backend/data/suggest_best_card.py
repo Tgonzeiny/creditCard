@@ -1,11 +1,5 @@
-from flask import Blueprint
-
-recommendedCardBlueprint = Blueprint("recommendedCard", __name__)
-
-
-@recommendedCardBlueprint.route("/recommend-card", methods=["GET"])
-def reccommendedCardRoute(user_id, mcc_code, user_cards):
-    best_card = None
+def suggest_best_card(mcc_code, user_cards):
+    max_card = None
     best_rate = 0.0
 
     for card in user_cards:

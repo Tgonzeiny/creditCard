@@ -1,4 +1,4 @@
-#This class serves to get cards out of the "allCards" database containing card id number to card names
+#This class serves to get cardFunctions out of the "allCards" database containing card id number to card names
 
 import psycopg2
 from backend.config import DBConfig
@@ -10,7 +10,7 @@ class cardDirectory:
         self.conn = getdbConnection()
         self.cursor = self.conn.cursor()
 
-    #Gets a list of all cards to query from when adding a new card for your profile
+    #Gets a list of all cardFunctions to query from when adding a new card for your profile
     def getAllCards(self):
         self.cursor.execute("SELECT id, name, network, issuer FROM allCards ORDER BY name ASC;")
         rows = self.cursor.fetchall()

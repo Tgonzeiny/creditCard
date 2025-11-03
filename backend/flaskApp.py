@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
-from backend.accountData.cards.cardDirectory import cardDirectory
+from backend.accountData.cardFunctions.cardDirectory import cardDirectory
 from backend.routes.userRoutes import userRoutes
 from backend.accounts.userAccounts import userAccounts
 #from models import userModel, cardModel, rewardModel
@@ -22,7 +22,7 @@ def getAllCards():
     cd = cardDirectory()
     cards = cd.getAllCards()
     cd.close()
-    return jsonify({"cards":cards})
+    return jsonify({"cardFunctions":cards})
 
 @app.route("/")
 def home():

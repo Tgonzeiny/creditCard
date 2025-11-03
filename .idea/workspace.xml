@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37511609-b16b-4e96-b1fa-70cf24d4c1a0" name="Changes" comment="updated to fix unit tests that error out">
-      <change beforePath="$PROJECT_DIR$/.idea/creditCard.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/creditCard.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/accountData/accountFunctions/add_cards.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/data/suggest_best_card.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/accountData/cards/cardDirectory.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/accountData/cardFunctions/cardDirectory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/accountData/cards/cardRewardsManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/accountData/cardFunctions/cardRewardsManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/accounts/userAccounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/accounts/userAccounts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/accounts/userCards.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/accounts/userCards.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/flaskApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/flaskApp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cardwise-app/app/(tabs)/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/cardwise-app/app/(tabs)/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cardwise-app/app/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/cardwise-app/app/register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/recommendedCardRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/recommendedCardRoute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests/test_getCards.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tests/test_getCards.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cardwise-app/app/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/cardwise-app/app/home.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +73,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;login-logic&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;logic&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Thomas Gonzalez/Desktop/creditCard/creditCard&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,

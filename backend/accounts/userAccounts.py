@@ -46,4 +46,18 @@ class userAccounts:
         self.cursor.close()
         self.conn.close()
 
+    def addCardToUser(self, user_id, card_id):
+        try:
+            self.cursor.execute("""
+            INSERT INTO cards (user_id, card_id) 
+            VALUES (%s, %s)
+            ON CONFLICT DO NOTHING
+            """, (user_id, card_id))
+
+            return {"success": True, "message": "Card added successfully"}
+        except Exception as e:
+            print("Error adding card: ", e)
+            return {"success": False, "message": "Failed to add card"}
+
+
 
